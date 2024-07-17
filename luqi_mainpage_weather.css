@@ -1,0 +1,1264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    overflow-x:hidden;
+}
+
+.main1{
+    width: 100%;
+    height: 600px;
+    background: url(https://weatherstack.com/site_images/mountains.svg), #1f4e69;
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+}
+
+.content{
+    width: 1200px;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: space-around;  */
+
+}
+
+
+.contentTop{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.contentBottom{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    /* horizontally center */
+    align-items: center;
+    /* vertically center */
+
+
+}
+
+.contentTopLeft{
+    width: 202px;
+    height: 28px;
+   
+    /* display: flex; set in the father root*/
+    /* align-items: center; set in the father root */
+
+    
+}
+
+
+.contentTopLeft img{
+    width: 202px;
+    height: 28px;
+    
+}
+
+.contentTopRight{
+    width: 580px;
+    height: 70px;
+    display:flex;
+    align-items: center;
+    /* items lie in the center along y-asis */
+
+}
+
+
+.contentTopRight li{
+    list-style: none;
+    text-decoration: none;
+    height: 70px;
+    font-size: 13px;
+    color: #fff;  
+    text-align: center;
+    line-height: 70px;
+    font-weight: 500;
+
+}
+
+
+.contentTopRight li a{
+    text-decoration: none;
+    color: #fff;  
+    font-weight: 700;
+
+}
+
+
+.contentTopRight li a:hover{
+    text-decoration: underline;
+    
+}
+
+/* how to use class selector with ul nth-child */
+
+
+.contentTopRight ul li:nth-child(1){
+    width: 72px;
+}
+
+
+.contentTopRight .Pricing{
+    width: 72px;
+
+}
+
+
+.contentTopRight .Documentation{
+    width: 123px;
+}
+
+
+.contentTopRight .FAQ{
+    width: 56px;
+}
+
+
+
+.contentTopRight .Blog{
+    width: 56px;
+}
+
+
+.contentTopRight .Status{
+    width: 79px;
+}
+
+
+.contentTopRight .Log{
+    width: 72px;
+    height: 36px;
+    background-color: #184157;
+    line-height: 36px;
+}
+
+
+.contentTopRight .sign{
+    width: 100px;
+    height: 36px;
+    background-color: #f47b21;
+    line-height: 36px;
+    margin-left: 10px;
+}
+
+
+.Status{
+    position: relative;
+}
+
+.Status::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    background-color: #47c652;
+    border-radius: 50%;
+    margin-top: 30px;
+    left: 7px;
+  }
+
+
+
+
+.bottomRight{
+    width: 500px;
+    height: 300px;
+    border-radius:10px;
+    border:4px solid #608094;
+    background: #16394c;
+    display: flex;
+}
+    
+
+
+
+.bottomLeft{
+    width: 444px;
+    height: 314px;
+    
+
+}
+
+
+.realTime{
+    width: 433px;
+    height: 80px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+
+
+}
+
+
+.instant{
+    width: 433px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+
+}
+
+.bottomLeft .trusted{
+    width: 388px;
+    height: 44px;
+    border-radius: 17px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    margin:20px 0px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+
+}
+
+.trusted img{
+    position:absolute;
+    left: 10px;
+
+}
+.bottomLeft .free{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.freeLeft{
+  width: 230px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #f47b21;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+
+}
+
+.freeRight{
+    width: 80px;
+    height: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    margin-left: 30px;
+    
+}
+
+
+.bottomRight .weather_animated{
+    width: 100%;
+    height: 100%;
+
+}
+
+.bottomRight .weather_animated .main{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* space between class for drilling down one more level */
+.bottomRight .weather_animated .main_left{
+    background-size: cover; 
+    margin-top: -30px;
+    width: 275px;
+    height: 137px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.bottomRight .weather_animated .main_left .full_clouds{
+    width:140px;
+    height:137px;
+    margin-top: -20px;
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-size:100% 100%;   
+    /* px for size */
+    background-image:url(https://weatherstack.com/site_images/weather_icon_full_clouds.svg)
+}
+
+
+.bottomRight  .weather_animated .main_right{ 
+    width: 134px;
+    height: 137px;
+ 
+ }
+ 
+ 
+ 
+ .bottomRight .weather_animated .main_right span{
+     /* display:flex; */
+     font-size: 15px;
+     /* margin-bottom: 2px;
+     margin-left: 360px; */
+     font-style:italic;
+     color: #fff;
+     
+ }
+ 
+ /* Descendant Selector  chosing class temperature*/
+ .bottomRight  .weather_animated .main_left .temperature{
+     /* position: absolute;
+     left:20px;
+     top:60px; */
+     width: 48px;
+     height: 45px;
+     font-size: 32px;
+     margin-top: 20px;
+     color: #fff;
+ 
+ }
+ 
+
+.bottomRight .weather_animated .location{
+    display: block;
+    height: 40px;
+    text-align: center;
+    padding-top:15px;
+    color:#fff;
+
+
+}
+
+.bottomRight .weather_animated .forecast_week{
+    width: 100%;
+    height: 110px;
+    margin-top: -40px;
+    display:flex;
+    justify-content: center;
+
+
+}
+
+
+.bottomRight .weather_animated .forecast_week .allweather{
+    width: 100%;
+    width: 430px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bottomRight .weather_animated .forecast_week .allweather li{
+    width: 100px;
+    height: 110px;
+    list-style: none;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 2px;
+    
+}
+
+.bottomRight .weather_animated .forecast_week .allweather li h6{
+    color: #fff;
+    font-size: 16px;
+}
+
+.bottomRight .weather_animated .forecast_week .allweather .temperature{
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+/* .bottomRight .weather_animated .forecast_week .week{
+    width: 100%;
+    height: 10px;
+    display:inline-block;
+    color: #fff;
+    
+
+} */
+
+
+/* .bottomRight .weather_animated .week ul li{
+    display:inline-block;
+    padding: 20px 30px 10px 30px; 
+   
+  
+    
+}
+
+.bottomRight .weather_animated .temperature ul li{
+    display:inline-block;
+    padding: 20px 30px 5px 35px;
+    color: #fff;
+    
+  
+} */
+
+
+
+/* .bottomRight .weather_animated .weather ul li{
+    display:inline-block;
+    align-content: center;
+    padding: 40px 25px 15px 60px;
+    background-repeat: no-repeat;
+    margin-left:5px;
+    
+} */
+
+/* .bottomRight .weather_animated .weather .sun{
+    background-image: url(https://weatherstack.com/site_images/weather_icon_full_sun.svg);
+}
+
+.bottomRight .weather_animated .weather .cloud_slight_rain{
+    background-image: url(https://weatherstack.com/site_images/weather_icon_cloud_slight_rain.svg);
+}
+
+.bottomRight .weather_animated .weather .cloudy{
+    background-image: url(https://weatherstack.com/site_images/weather_icon_full_clouds.svg);
+} */
+
+
+/* section .container .weather_animated .main_left{
+    top:30px !important;
+} */
+
+.main2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+       /* main axis-column center */
+    align-items: center;
+    /* adjust items along axis-row in the center */
+}
+
+
+
+.customers{
+    width: 100%;
+    height: 140px;
+    background: #eff2f5;
+    display: flex;
+    justify-content: center;
+       /* main axis-column center */
+    align-items: center;
+    /* adjust items along axis-row in the center */
+}
+
+.customers .logo{
+    width: 1150px;
+    height: 85px;
+    background: #eff2f5;
+    /* background-color: #608094; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+
+.customers .logo li{
+    list-style: none;
+    width: 187px;
+    height: 50px;
+    
+ 
+}
+
+.customers .logo .text{
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+      
+}
+
+
+.customers .logo li.deloitte{
+    background:url(https://weatherstack.com/site_images/client_deloitte.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+
+}
+
+
+.customers .logo li.microsoft{
+    background:url(https://weatherstack.com/site_images/client_microsoft.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+
+}
+.customers .logo li.warnerbros{
+    background:url(https://weatherstack.com/site_images/client_warnerbros.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 110px;
+    height: 50px;
+
+}
+.customers .logo li.wawa{
+    background:url(https://weatherstack.com/site_images/client_wawa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 80%;
+    width: 132px;
+    position:relative;
+    top:-5px;
+
+}
+.customers .logo li.schneider{
+    background:url(https://weatherstack.com/site_images/client_schneider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 80%;
+    position:relative;
+    left:20px;
+
+}
+
+.customers .logo li.ericsson{
+    background:url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+
+.show{
+    width: 100%;
+    height: 220px;
+    margin:20px auto;
+    display: flex;
+    justify-content: space-around;
+    
+    /* margin left right auto: can set the block in the middle */
+
+}
+
+.show .showbox{
+    width: 1200px;
+    height: 220px;
+    background-color: #eff2f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0px auto;
+}
+
+
+.show .showbox img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.show .showbox .heading{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+.show .showbox p{
+    font-size: 16px;
+    font-style:italic;
+}
+.show .time{
+    width: 250px;
+    height: 200px;
+    background-color: #ebeff4;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.show .location{
+    width: 250px;
+    height: 200px;
+    background-color: #ebeff4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+
+}
+
+.show .speed{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ebeff4;
+   
+
+}
+
+.show .price{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ebeff4;
+   
+
+}
+
+.show .heading{
+    width: 230px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 60px;
+    
+    
+}
+
+.show .explain{
+    width: 230px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    
+    
+}
+
+
+.main_features{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* adjust big box */
+
+}
+
+
+section.main_features .features{
+    width:1220px;
+    height: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* adjust two sub-boxes */
+}
+
+
+.main_features .details{
+    margin-top: 30px;
+    width: 440px;
+    height: 330px;
+    margin-left: 30px;
+   
+    
+}
+
+
+.main_features .details h4{
+    height: 60px;
+    font-size: 25px;
+    font-weight: 300;
+    
+}
+
+.main_features .details p{
+    font-size: 15px;
+    margin:15px 0;
+    line-height: 20px;
+
+}
+
+
+.main_features .details ul img{
+    width: 20px;
+    height: 20px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+
+.main_features .details ul{
+    height: 200px;
+    line-height: 40px;
+    list-style:none;
+   
+
+}
+
+.main_features .map{
+    width: 635px;
+    height: 350px;
+    background-image: url(https://weatherstack.com/site_images/world_map_vector.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+.main3{
+    width: 100%;
+    height: 1425px;
+    background: url(https://weatherstack.com/site_images/bg_waves_4.svg),#184157;
+    display: flex;
+    justify-content: center;
+    background-size: 100% 100%;
+}
+
+
+.main3 .example{
+    width: 1170px;
+    height: 1345px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; this is set for main-asis column*/
+    align-items: center;
+}
+
+
+.main3 .example .exampleBox{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 99px;
+    background-color: #416376;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+
+
+.main3 .example h4{
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: #fff;
+
+   
+}
+
+
+.main3 .example h5{
+    font-size: 20px;
+    margin-top: 30px;
+    color: #fff;
+    width: 600px;
+    height: 54px;
+    text-align: center;
+    font-weight: 500;
+    font-style: inherit;
+ 
+}
+
+
+.main3 .example .buttonBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.main3 .example .buttonBox li{
+    width: 225px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    list-style: none;
+    background-color: white;
+    cursor:pointer;
+    
+   
+}
+
+/* .main3 .example .buttonBox .list2{
+    color: red;
+    background-color: purple;
+} */
+
+.main3 .example .buttonBox li a{
+    text-decoration: none;
+    color:#283f59;
+
+
+}
+
+
+.main3 .example .buttonBox li a:hover{
+    text-decoration: underline;
+    
+
+}
+
+
+.main3 .example .buttonBox li:nth-child(1){
+    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: orange;
+    
+    
+    
+}
+
+
+
+.main3 .example .buttonBox li:nth-child(3){
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* list-style: none; */
+
+}
+
+/* .main3 .example .buttonBox a:focus{
+    background-color: #f47b21;
+    color: #fff;
+   
+} */
+
+.main3 .example .results{
+    margin-top: 20px;
+    width: 660px;
+    height: 740px;
+    background-color:  #17242b;
+    overflow: auto;   
+    /* overflow:scroll，auto，hidden */
+      /* hidden隐藏效果 */
+      /* overflow: hidden; */
+      /* 给添加滚动条 */
+      /* overflow: scroll; */
+      /* auto，是根据内容的多少来定义盒子是否需要用到滚动条，如果超出了盒子的大小，会自动添加滚动条效果 */
+
+}
+
+
+
+
+.main3 .example .results .results1{
+    line-height: 20px;
+    color: #ffc154;
+    text-align:left;
+}
+
+.main3 .example .results .results1 .green{
+    color: #A0D468;
+}
+
+.main3 .features {
+    margin-top: 20px;
+    width: 1140px;
+    height: 292px;
+    display: flex;  
+    justify-content: center;
+    align-content: center;
+
+}
+
+.main3 .features .fbox{
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+
+.main3 .features .fbox li {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+    align-content: center;
+    width: 370px;
+    height: 131px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 4px 6px rgba(50,50,93,0.11); */
+    list-style: none;
+    margin: 2px 2px;
+
+    /* box-shadow x direction;y direction; degree of blur;size of blur;color of blur;inside or outside */
+}
+
+
+
+
+/* .main3 .features .fbox .heading::before{
+    background-image: url(/images/magnet-solid.svg);
+    background-size: 20px 20px; 
+    background-color: #cb783d;
+} */
+
+
+.main3 .features .fbox .heading{
+    width: 330px;
+    height: 34px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+      
+}
+
+.main3 .features .fbox .heading img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background-color: #fff;
+    
+
+
+
+}
+
+.main3 .features .fbox p{
+    color:#ffffff;
+    width: 330px;
+    height: 60px;
+    margin-left: 20px;
+    font-size: 14px;
+
+}
+
+.main4{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 40px 0;
+
+    
+}
+
+
+.main4 .main4_box{
+    width: 1200px;
+    height: 380px;
+    
+    
+}
+
+.main4 .main4_box .infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+
+.main4 .main4_box .infor .infor1{
+    width: 1140px;
+    height: 32px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+   
+
+}
+
+.main4 .main4_box .infor .infor2{
+    width: 600px;
+    height: 54px;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+    margin: 20px 0;
+   
+
+}
+
+
+
+.main4 .main4_box .company ul{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.main4 .main4_box .company ul li{
+    width: 250px;
+    height: 100px;
+    list-style: none;
+    border-radius: 5%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.main4 .main4_box .company .brand1{
+
+background:#263e6a url(//weatherstack.com/site_images/client_white_daimler.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 175px;
+}
+
+
+.main4 .main4_box .company .brand2{
+
+    background:#eef2f5 url(https://weatherstack.com/site_images/client_deloitte.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 175px;
+}
+
+.main4 .main4_box .company .brand3{
+
+    background:#01275b url(https://weatherstack.com/site_images/client_white_ericsson_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65px;
+    width: 135px;
+}
+
+.main4 .main4_box .company .brand4{
+
+    background:#eef2f5 url(https://weatherstack.com/site_images/client_microsoft.svg);
+    background-position: center;
+    background-size: 175px;
+    background-repeat: no-repeat;
+}
+.main4 .main4_box .company .brand5{
+
+    background:#009e4d url(https://weatherstack.com/site_images/client_white_schneider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+    width: 200px;
+}
+.main4 .main4_box .company .brand6{
+
+    background:#027ac2 url(https://weatherstack.com/site_images/client_white_warnerbros.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65px 65px;
+    width: 190px;
+}
+
+.main4 .main4_box .company .brand7{
+
+    background:#ee2e25 url(https://weatherstack.com/site_images/client_white_wawa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px;
+}
+
+.main4 .main4_box .company .brand8{
+
+    background:#eef2f5 url(https://weatherstack.com/site_images/client_canda.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;
+    width: 135px;
+}
+
+.main4 .main4_box .company .brand9{
+
+    background:#23477f url(https://weatherstack.com/site_images/client_mckinsey.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;
+    width: 260px;
+}
+
+.main4 .main4_box .company .brand10{
+
+    background:#eef2f5 url(https://weatherstack.com/site_images/client_rimowa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 155px;
+}
+
+
+.signBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign .signBox{
+    width: 100%;
+    height: 116px;
+    background-color: #eef2f5;
+   
+} 
+
+
+.sign .signBox{
+    font-weight: 300;}
+
+
+.sign .signBox img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+
+.sign .signBox a{
+    width: 170px;
+    height: 50px;
+    background-color: #f47b21;
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.footerBox{
+    width: 100%;
+    height: 420px;
+    background-color: #184157;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footerBox .upperBox{
+    width: 1170px;
+    height: 300px;
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items:center;
+    
+
+}
+
+
+.footerBox .upperBox .copyright{
+    width: 310px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+
+.footerBox .upperBox .copyright .social{
+    display: flex;
+    
+}
+
+.footerBox .upperBox .copyright .social img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    
+}
+
+.footerBox .upperBox .copyright .logo img{
+    width: 200px;
+    height: 35px;
+}
+
+.footerBox .upperBox ul{
+    width: 196px;
+    height: 160px;
+    list-style: none;
+
+    margin-top: 30px;
+    line-height: 30px;
+    
+
+}
+
+.footerBox .upperBox .heading{
+    color:#fff;
+    font-weight: 800;
+}
+    
+
+.footerBox .upperBox ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+.footerBox .upperBox ul li a:hover{
+    text-decoration: underline;
+}
+
+.footerBox .bottomBox{
+    width: 1170px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footerBox .bottomBox .copylink{
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+
+.footerBox .bottomBox .copylink a{
+    color: #fff;
+}
+
+.footerBox .bottomBox .copytext{
+    color: #fff;
+    font-size: 12px;
+   
+}
+
+.footerBox .bottomBox .copytext a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+   
+}
+
+

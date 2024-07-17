@@ -1,0 +1,502 @@
+.main{
+    width: 100%;
+    overflow-x:hidden;
+}
+
+.main1{
+    width: 100%;
+    height: 60px;
+    background-color:  #1f4e69;
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    position: fixed;
+    top:0px;
+
+    /* why stick not works */
+    
+}
+
+.content{
+    width: 1200px;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: space-around;  */
+
+}
+
+
+.contentTop{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.contentTopLeft img{
+    width: 202px;
+    height: 28px;
+    
+}
+
+.contentTopRight{
+    width: 580px;
+    height: 70px;
+    display:flex;
+    align-items: center;
+    /* items lie in the center along y-asis */
+
+}
+
+
+.contentTopRight li{
+    list-style: none;
+    text-decoration: none;
+    height: 70px;
+    font-size: 13px;
+    color: #fff;  
+    text-align: center;
+    line-height: 70px;
+    font-weight: 500;
+
+}
+
+
+.contentTopRight li a{
+    text-decoration: none;
+    color: #fff;  
+    font-weight: 700;
+
+}
+
+
+.contentTopRight li a:hover{
+    text-decoration: underline;
+    
+}
+
+/* how to use class selector with ul nth-child */
+
+
+
+.contentTopRight .Pricing{
+    width: 72px;
+
+}
+
+
+.contentTopRight .Documentation{
+    width: 123px;
+}
+
+
+.contentTopRight .FAQ{
+    width: 56px;
+}
+
+
+
+.contentTopRight .Blog{
+    width: 56px;
+}
+
+
+.contentTopRight .Status{
+    width: 79px;
+}
+
+
+.contentTopRight .Log{
+    width: 72px;
+    height: 36px;
+    background-color: #184157;
+    line-height: 36px;
+}
+
+
+.contentTopRight .sign{
+    width: 120px;
+    height: 36px;
+    background-color: #f47b21;
+    line-height: 36px;
+    margin-left: 10px;
+}
+
+
+.Status{
+    position: relative;
+    
+}
+
+.Status::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #47c652;
+    border-radius: 50%;
+    margin-top: 30px;
+    left: 7px;
+    
+  }
+
+
+  .main  section.main_content{
+    /* width: 1400px; */
+    width: 100%;
+    height: 1450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .main  section.main_content .main_box{
+    width: 1200px;
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main  section.main_content .main_box .post_left{
+    width: 270px;
+    height: 800px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+  }
+
+  .main  section.main_content .main_box .post_left .post_left1{
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    
+  }
+
+  .main  section.main_content .main_box .post_left .post_left2{
+    width: 100%;
+    height: 350px;
+   
+    display:flex;
+    flex-direction: column;
+  }
+
+
+
+
+  .main  section.main_content .main_box .post_left .banner{
+    width: 100%;
+    height: 60px;
+    background-color: #283f59;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    
+
+  }
+
+  .main  section.main_content .main_box .post_left .banner h2{
+    color: #fff;
+    margin-left: 20px;
+
+  }
+
+
+  .main  section.main_content .main_box .post_left ul{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+
+  .main  section.main_content .main_box .post_left li{
+    width: 240px;
+    height: 100px;
+    list-style: none;
+    color: #283f59;
+    line-height: 30px;
+    margin-left: -20px;
+    
+    
+    
+  }
+
+  .main  section.main_content .main_box .post_left li:nth-child(2){
+    width: 240px;
+    height: 70px;
+  }
+
+  .main  section.main_content .main_box .post_left li a{
+    text-decoration: none;  
+    
+  }
+
+
+  .main  section.main_content .main_box .post_left li a:hover{
+    text-decoration: underline;
+  }
+
+
+  .main  section.main_content .main_box .post_left .title{
+    width: 270px;
+    height: 320px; 
+    background-color: #ebeff4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+
+  .main  section.main_content .main_box .post_right{
+    width: 900px;
+    height: 1500px;
+    /* background-color: #ebeff4; */
+    display: flex;
+    justify-content: space-evenly;
+   
+  }
+
+  .main  section.main_content .main_box .post_right1{
+    width: 420px;
+    height: 1420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 15px;
+   
+   
+
+  }
+
+
+  .main  section.main_content .main_box .post_right2{
+    width: 420px;
+    height: 1420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox{
+    width: 420px;
+    height: 450px;
+    border-radius: 5px;
+    background-color: #ebeff4;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox .title a{
+    font-size: 22px;
+    text-decoration: none;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox .title a:hover{
+
+    text-decoration: underline;
+  }
+
+
+  .main  section.main_content .main_box .post_right .post_rightBox h3.title{
+    margin-left: 10px;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox img{
+    width: 400px;
+    height: 250px;
+    margin-left: 10px;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox  p{
+
+    color: #184157;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  /* .main  section.main_content .main_box .post_right .post_rightBox.right11{
+    background-color: pink;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox.right12{
+    background-color: indianred;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox.right13{
+    background-color: violet;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox.right21{
+    background-color: pink;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox.right22{
+    background-color: indianred;
+  }
+
+  .main  section.main_content .main_box .post_right .post_rightBox.right23{
+    background-color: violet;
+  } */
+
+
+  .page_navi{
+    width: 950px;
+    height: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content:end;
+  }
+
+  .page_navi .page_box{
+    width: 280px;
+    height: 60px;
+    border: 1px solid #ebeff4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+  }
+
+  .page_navi .page_box a{
+    text-decoration: none;
+    font-size: 18px;
+
+  }
+
+
+
+  .footerBox{
+    width: 100%;
+    height: 420px;
+    background-color: #184157;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footerBox .upperBox{
+    width: 1170px;
+    height: 300px;
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items:center;
+    
+
+}
+
+
+.footerBox .upperBox .copyright{
+    width: 310px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+
+.footerBox .upperBox .copyright .social{
+    display: flex;
+    
+}
+
+.footerBox .upperBox .copyright .social img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    
+}
+
+.footerBox .upperBox .copyright .logo img{
+    width: 200px;
+    height: 35px;
+}
+
+.footerBox .upperBox ul{
+    width: 196px;
+    height: 160px;
+    list-style: none;
+
+    margin-top: 30px;
+    line-height: 30px;
+    
+
+}
+
+.footerBox .upperBox .heading{
+    color:#fff;
+    font-weight: 800;
+}
+    
+
+.footerBox .upperBox ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+.footerBox .upperBox ul li a:hover{
+    text-decoration: underline;
+}
+
+.footerBox .bottomBox{
+    width: 1170px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footerBox .bottomBox .copylink{
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+
+.footerBox .bottomBox .copylink a{
+    color: #fff;
+}
+
+.footerBox .bottomBox .copytext{
+    color: #fff;
+    font-size: 12px;
+   
+}
+
+.footerBox .bottomBox .copytext a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+   
+}
+
+
+
+
+
+
+
+
